@@ -115,27 +115,57 @@ nav {
   nav {
     background-color: white;
   }
+}
 
-  @keyframes directoryfade {
-    from {
-      opacity: 0;
-      transform: translateX(25px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-
-  .trans .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .trans .line2 {
+@keyframes directoryfade {
+  from {
     opacity: 0;
+    transform: translateX(25px);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 
-  .trans .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+.trans .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.trans .line2 {
+  opacity: 0;
+}
+
+.trans .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 835px) {
+  .directory {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .directory {
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .directory {
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .directory {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .directory {
+    width: 50%;
   }
 }
