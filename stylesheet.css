@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
 .title {
   font-size: 20pt;
   letter-spacing: 8px;
@@ -138,6 +146,39 @@ nav {
 .mainbody3 a:hover {
   background-color: black;
   color: #d7ddc7;
+}
+
+.fotterbody {
+  background-color: #1948a0;
+  color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". .";
+}
+
+.fotterul {
+  grid-column: auto;
+  grid-row: auto;
+  justify-self: center;
+  align-self: center;
+  height: 100vw;
+}
+
+.fotterbody li {
+  list-style: none;
+  font-family: "Roboto Slab", serif;
+}
+
+.vårcopy {
+  font-size: 20pt;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.japp {
+  font-size: 18pt;
+  padding-left: 100px;
 }
 
 .philips-tv {
@@ -390,6 +431,16 @@ nav {
 
   .mainbody3 {
     display: grid;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .vårcopy {
+    font-size: 16pt;
+  }
+
+  .japp {
+    font-size: 12pt;
   }
 }
 
